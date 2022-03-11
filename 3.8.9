@@ -1,0 +1,20 @@
+public String altCase(String text)
+{
+    String altText = "";
+   for (int i=0;i<text.length(); i++)
+   {
+        if (i%2 == 0)
+        {
+            altText = altText + Character.toUpperCase(text.charAt(i));
+        }
+        else
+        {
+            altText = altText + Character.toLowerCase(text.charAt(i));
+        }
+
+   }
+   return altText;
+    
+}
+
+//if % 2 of index = 0 then toUpperCase(text.charAt(i))
